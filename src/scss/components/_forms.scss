@@ -1,0 +1,36 @@
+.gform_wrapper{
+    input[type=text], input[type=email], input[type=tel]{
+        // border-radius: 99px;
+        background-color: #fff;
+        color: $color-2;
+        border: 2px solid black;
+        padding: 10px 15px !important;
+        &::placeholder{
+            color: black;
+        }
+    }
+    input[type=submit]{
+        padding: 1rem 5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: .8rem;
+        width: 100%;
+        background-color: $color-1;
+        color: $color-3;
+        border-radius: 99px;
+        cursor: pointer;
+        border: none;
+        transition: all 350ms ease-in-out;
+        letter-spacing: 3px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover{
+            background-color: $color-3;
+            color: $color-1;
+        }
+        @include md-screen{
+            width: auto;
+        }
+    }
+}

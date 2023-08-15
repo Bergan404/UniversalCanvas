@@ -1,0 +1,66 @@
+/*!
+ * Theme Name: Custom Theme Build
+ * Description: A custom theme.
+ * Version: 1.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * This theme, like WordPress, is licensed under the GPL.
+   Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Variables */
+
+$color-1: crimson;
+$color-2: steelblue;
+$color-3: #eee;
+
+$primary-font: sans-serif;
+$secondary-font: serif;
+
+/* Mixins */
+
+/* MIN-WIDTH */
+
+@mixin xl-screen {
+    @media (min-width: 1280px) { @content; }
+}
+
+@mixin lg-screen {
+    @media (min-width: 992px) { @content; }
+}
+
+@mixin md-screen {
+    @media (min-width: 768px) { @content; }
+}
+
+@mixin sm-screen{
+    @media (min-width: 576px) { @content; }
+}
+
+/* MAX-WIDTH */
+
+@mixin lg-desktop {
+    @media (max-width: 1280px) { @content; }
+}
+
+@mixin md-desktop {
+    @media (max-width: 992px) { @content; }
+}
+
+@mixin sm-desktop {
+    @media (max-width: 768px) { @content; }
+}
+
+@mixin mobile {
+    @media (max-width: 576px) { @content; }
+}
+
+
+/* Imports */
+
+@import "extra/additional-styles";
+@import "extra/bootstrap_modifications";
+@import "basic_styles";
+
+@import "components/header";
+@import "components/forms";
