@@ -8,7 +8,7 @@ function custom_theme_enqueue()
     wp_register_style('aos_style', 'https://unpkg.com/aos@2.3.1/dist/aos.css', [], $ver);
 
     // Latest Version of font awesome
-    wp_register_style('font_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css', [], $ver);
+    wp_register_style('font_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css', [], $ver);
 
     wp_register_style('bootstrap5_style', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', [], $ver);
 
